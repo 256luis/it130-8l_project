@@ -1,0 +1,95 @@
+.txtpad{
+background-color: ghostwhite;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 100px;
+padding-top: 100px;
+overflow: hidden;
+clear: both;
+}
+h1{
+margin-left: 75px;
+padding-top: 170px;
+width: 450px;
+height: 200px;
+text-align: center;
+letter-spacing: -5px;
+line-height: 0.9;
+font-size: 100px;
+font-family: Century gothic,serif;
+font-weight: lighter;
+color: ghostwhite;
+/*text-shadow: 7px 7px #232528;*/
+clear: left;
+text-align: left;
+
+
+}
+h2{
+text-align: left;
+margin-left: 100px;
+font-size: 20px;
+font-family: calibri;
+font-weight: lighter;
+color:ghostwhite;
+clear: left;
+width: 400px;
+
+}
+h3,h4,h4,h6{
+text-align: left;
+font-size: 25px;
+font-family: verdana;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.nav1{
+align-content: center;
+margin-bottom:-100px;
+padding-right: 50px;
+overflow: hidden;
+position: sticky;
+top: 0;
+background-color: #232528;
+z-index: 2;
+padding-left: 50px;
+}
+
+.nav1 a{
+float: left;
+color: ghostwhite;
+text-align: center;
+padding: 15px 17px;
+font-size: 18px;
+text-decoration: none;
+font-family: sans-serif;
+
+}
+.nav1 a:hover{
+border-bottom:solid;
+border-color:#FFA400;
+border-width: 6px;
+color: ghostwhite;
+
+}
+.nav1 a.active{
+border-bottom:solid;
+border-color:#FFA400;
+border-width: 6px;
+color: ghostwhite;
+}
+a{
+text-decoration: none;
+color: black;
+font-family: verdana;
+padding: 5px;
+}
+a:hover{
+border-bottom:solid;
+border-color:#FFA400;
+border-width: 6px;
+color: #232528;
+}
+a.active1{
+background-color:#FFA400;
+color: #232528;
+}
