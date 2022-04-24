@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel</title>
+    <link rel="stylesheet" type="text/css" href="hotelstyle.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .blackTint {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.50);
+        width: 100%;
+        height: 35vw;
+    }
+
+    .backgroundImage {
+        object-fit: cover;
+        width: 100%;
+        height: 35vw;
+    }
+
+    .blackTint .title {
+        margin-left: 0vw;
+        padding-top: 17vw;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        line-height: 0vw;
+        font-size: 7vw;
+        font-family: Century gothic,serif;
+        font-weight: lighter;
+        color: ghostwhite;
+        /*text-shadow: 7px 7px #232528;*/
+    }
+
+    .blackTint .subtitle {
+        margin-left: 0vw;
+        padding-top: 7vw;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        letter-spacing: 0vw;
+        line-height: 0;
+        font-size: 2vw;
+        font-family: Century gothic,serif;
+        font-weight: lighter;
+        color: ghostwhite;
+    }
+    
+    .bronze {
+        position: relative;
+        left: 5vw;
+        border-radius: 3vw;
+        background-color: peru;
+        height: 20vw;
+        width: 30vw;
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+
+        transition: 0.1s;
+    }
+    
+    .bronze:hover {
+        left: 5vw;
+        height: 24vw;
+        width: 36vw;
+    }
+    
+    .silver {
+        position: relative;
+        left: 5vw;
+        background-color: gray;
+        border-radius: 3vw;
+        height: 20vw;
+        width: 30vw;
+        
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+
+        transition: 0.1s;
+    }
+
+    .silver:hover {
+        left: 5vw;
+        height: 24vw;
+        width: 36vw;
+    }
+
+    .gold {
+        position: relative;
+        left: 5vw;
+        background-color: goldenrod;
+        border-radius: 3vw;
+        height: 20vw;
+        width: 30vw;
+        
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+
+        transition: 0.1s;
+    }
+
+    .gold:hover {
+        left: 5vw;
+        height: 24vw;
+        width: 36vw;
+    }
+
+    ul {
+        font-family: Century gothic,serif;
+        color: white;
+        font-size: 1.5vw;
+        padding-left: 2vw;
+    }
+
+    .signupForm {
+        position: absolute;
+        top: 35vw;
+        right: 5vw;
+
+        /* border: 1px solid black; */
+        width: 50vw;
+        height: 70vw;
+
+        padding-top: 5vw;
+    }
+
+</style>
+
+<body>
+    <div class="nav1">
+        <a href="#Home" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Take a Tour</a>
+        <a href="#">Services Offered</a>
+        <a href="#">Reservation</a>
+        <a href="#">Become a Member</a>
+        <a href="#">Careers</a>
+        <a href="#">Our Partners</a>
+    </div>
+
+    <div class="blackTint">
+        <h1 class="title">BECOME A MEMBER</h1>
+        <h1 class="subtitle">Upgrade your Shangri-La experience and enjoy additional perks for a minimal fee. </h1>
+    </div>
+
+    <img class="backgroundImage" src="img/MEMBER_BACKGROUND.jpg" width="100%">
+
+    <div class="bronze">
+        <div style="padding: 2vw;">
+            <h3 style="color: white">BRONZE MEMBERSHIP</h3>
+            <ul>
+                <li>Save up to 10% on bookings.</li>
+                <li>Enjoy exclusive offers.</li>
+                <li>Earn points.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="silver">
+        <div style="padding: 2vw;">
+            <h3 style="color: white">SILVER MEMBERSHIP</h3>
+            <ul>
+                <li>All Bronze Membership benefits.</li>
+                <li>Save up to 20% on bookings.</li>
+                <li>Access to fitness suites.</li>
+                <li>Access to kids club.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gold">
+        <div style="padding: 2vw;">
+            <h3 style="color: white">GOLD MEMBERSHIP</h3>
+            <ul>
+                <li>All Gold Membership benefits.</li>
+                <li>Save up to 30% on bookings.</li>
+                <li>Access to water sports centre.</li>
+                <li>Access to tennis and paddle courts.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="signupForm">
+        <h3>Register Now!</h3>
+        <div style="font-size: 1vw; margin-left: 2vw; font-family: Century gothic,serif;">
+            Full Name:<br /><input type="text"><br /><br />
+            E-mail:<br /> <input type="email"><br /><br />
+            Mobile No:<br /> <input type="number"><br /><br />
+            Date of Birth: <br /><input type="date"><br /><br />
+            Valid ID: <br /><input type="file"><br /><br />
+            Membership Type: <br />
+            <input type="radio" name="type"> Bronze <br />
+            <input type="radio" name="type"> Silver <br />
+            <input type="radio" name="type"> Gold <br /><br />
+            Additional Details: <br /><textarea cols="100" rows="20"></textarea>
+            <br /><br />
+            <input type="button" value="Submit">
+        </div>
+    </div>
+
+</body>
+
+</html>
