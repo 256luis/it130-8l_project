@@ -9,7 +9,8 @@
 </head>
 <style>
 		html, body {
-			max-width: 100%;
+			width: 100vw;
+			max-width: 100vw;
 			overflow-x: hidden;
 		}
 		*{
@@ -60,7 +61,7 @@
 			text-indent: 0px;
 			color: white;
 			font-weight: 500;
-			padding-right: 30vw;
+			padding-right: 40vw;
 			line-height: 25px;
 			padding-bottom: 10vh;
 			padding-left: 5vw;
@@ -78,21 +79,25 @@
 		.text{
 			padding-right: 20px;
 		}
-	
+		.txtpad{
+			align-content: center;
+			text-align: center;
+			padding-bottom: 2vh;
+			padding-left: 15vw;
+		}
 		.querybox{
-			width: 20vw; 
-			height: auto; 
+			max-width: 25vw; 
 			margin: 10vh; 
 			background-color: #FFA400;
-			padding: 15px;
+			padding: 35px;
 			box-shadow: 7px 10px 16px -2px rgba(0,0,0,0.44);
 		}
 		.querybox:hover{
-			background-color: #EC5050;
-			transition: 0.5s;
+			box-shadow: 7px 10px 16px -2px rgba(0,0,0,0.3);
+			transition: 0.2s;
 		}
 		.querybox:not(:hover){
-			background-color: #FFA400;
+			box-shadow: 7px 10px 16px -2px rgba(0,0,0,0.44);
 			transition: 0.5s;
 		}
 	
@@ -100,7 +105,7 @@
 		  background-color: #232528;
 		  border: none;
 		  color: white;
-		  padding: 15px 25px;
+		  padding: 15px 60px;
 		  text-align: center;
 		  text-decoration: none;
 		  display: inline-block;
@@ -108,10 +113,24 @@
 		  margin: 4px 2px;
 		  cursor: pointer;
 		}
+		.button:hover{
+			background-color: #464A50;
+			transition: 0.2s;
+		}
+		.button:not(:hover){
+			background-color: #232528;
+			transition: 0.2s;
+		}
 		.emailIn{
 			color: #232528;
-			
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+			padding: 15px 60px;
+			margin: 10px;
 		}
+		.bgpanel{
+			width: 100vw;
+			margin: 0px;
+		;}
 	}
 </style>
 <body>
@@ -129,7 +148,7 @@
     <!-- <div class="bg1"></div> -->
 
 	<div class="banner">
-	    <center><img src="img/b180523005-banner-size.jpg" width="1920" height="auto" alt="" style="filter: brightness(35%); filter: blur(2px); width: 110%; height: 100vh;"> </center>
+	    <center><img src="img/b180523005-banner-size.jpg" width="1920" height="auto" alt="" style="filter: brightness(85%); width: 100%; height: 100vh;"> </center>
 		<div class="overimg">
 		<h3 class="title">Our Partners</h3>
 		<p class="txtoverimg"> 
@@ -137,9 +156,8 @@
 		</p>
 		</div>
 		</div>
+		<center>
 		<div class="txtpad">
-		
-		<section>
 			<center>
 			  <div class="partner">
 				  
@@ -198,18 +216,15 @@
 				  
 			  </div>
 			  </center>
-			  
-			  
-
-		</section>
-	</div>
+		
+	</div> </center>
 	
-	<div style="background-color: #232528; width: 100%">
+	<div style="background-color: #232528; width: 100%;">
 		<br />
 		
 		<br />
 		<center>
-		<table width="90%">
+		<table width="80%">
 		  <tbody>
 			<tr valign="center">
 			  <td width="60%">
@@ -224,13 +239,13 @@
 		  </tbody>
 		</table>
 		
-		<br /><br />
-		<table width="90%">
+		<br />
+		<table width="80%">
 		  <tbody>
 			<tr valign="center">
 			  <td><img src="img/3-Investors-HeroBanner-m.jpg" width="500" height="auto" alt=""/></td>
 			  <td>&nbsp;</td>
-			  <td width="60%">
+			  <td width="55%">
 				  <h4 style="padding-left: 0vw; color: ghostwhite; font-size: 40px;"> Shangri-La Asia Limited</h4>
 				  <p style="color: ghostwhite; line-height: 30px;">
 				  	We operate our businesses under our multi-brands encompassing key areas in hotels and resorts, commercial and residential properties, food and beverage, and recreational experiences; including but not limited to “Shangri-La”, “Kerry Hotels”, “JEN by Shangri-La”, “Traders”, “Rasa”, “Summer Palace”, “Shang Palace”, “CHI, The Spa at Shangri-La”. <br /> <br />
@@ -241,21 +256,19 @@
 			</tr>
 		  </tbody>
 		</table>
-			<br />
+			<br /><br />
 		</center>
 	</div>
 	
-	
+	<div class="bgpanel">
 	<center>
-	<div style="" class="querybox">
-		
+	<div class="querybox">
 		<h4 style="padding-left: 0vw; color: #232528; font-size: 40eh; line-height: 28px;"> Would You Like to Become a Partner or an Investor?</h4>
-		
 			<input type="email" class="emailIn" placeholder="YourEmail@email.com">
 			<br/>
 			<input type="submit" class="button">
-		
 	</div>
 	</center>
+	</div>
 </body>
 </html>
