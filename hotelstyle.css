@@ -79,12 +79,12 @@ border-color:#FFA400;
 border-width: 0.5vw;
 color: ghostwhite;
 }
-/*a{
+a{
 text-decoration: none;
 color: black;
 font-family: verdana;
 padding: 0.5vw;
-}*/
+}
 a:hover{
 border-bottom:solid;
 border-color:#FFA400;
@@ -99,7 +99,7 @@ color: #232528;
 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 position: static;
 bottom: 0;
-width: 100%;
+width: 100vw;
 height: 225px;
 background-color: #232528;
 color: white;
