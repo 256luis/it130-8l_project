@@ -10,20 +10,9 @@
 </head>
 <style>
 
-.banner-img{
-height: 70%
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-}
-
-.banner-text{
-text-align:center;
-position: absolute;
-width: 100%
-color: white;s
-margin-top: 15vw
+body{
+padding: 0;
+margin: 2vw;
 }
 
 .submit {
@@ -55,6 +44,24 @@ border: 2px solid ghostwhite;
   transition: 0.5s;
 }
 
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("landscape-aboutus.jpg");
+  height: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+ }
+
 .submit:hover span {
   padding-right: 25px;
 }
@@ -64,36 +71,85 @@ border: 2px solid ghostwhite;
   right: 0;
 }
 
-.divab{
+div.ab {
+background-color:#BDBED2;
 text-align: justify;
-text-justify: inter-word
-padding-top: 32px;
-padding-right: 32px;
-padding-bottom: 32px;
-padding-left: 32px;
+text-justify: inter-word;
+padding-top: 2vw;
+padding-right: 2vw;
+padding-bottom: 2vw;
+padding-left: 2vw;
 }
 
-.divhis{
+div.his {
+background-color:#3E3F4F;
 text-align: justify;
-text-justify: inter-word
-padding-top: 32px;
-padding-right: 32px;
-padding-bottom: 32px;
-padding-left: 32px;
+text-justify: inter-word;
+padding-top: 2vw;
+padding-right: 2vw;
+padding-bottom: 2vw;
+padding-left: 2vw;
+color: white;
 }
+
+.display{
+display: flex;
+}
+
+div.vis{
+background-color: gold;
+text-align: center;
+position: relative;
+height: 20vw;
+width: 20vw
+padding-top: 1vw;
+padding-right: 1vw;
+padding-bottom: 1vw;
+padding-left: 1vw;
+color: black;
+
+}
+
+div.mis{
+background-color: black;
+text-align: center;
+flex: 1;
+height: 20vw;
+width: 20vw
+padding-top: 1vw;
+padding-right: 1vw;
+padding-bottom: 1vw;
+padding-left: 1vw;
+color:white;
+}
+
+
 
 p{
-text-align:justify;
+font-size: 16px
 }
+
 
 img{
 padding-right: 20px;
 padding-left: 20px;
 }
 
-label{
+label {
 	display: none;
 }
+
+div.feed {
+background-color: light-gray;
+text-align: justify;
+text-justify: inter-word;
+padding-top: 2vw;
+padding-right: 2vw;
+padding-bottom: 2vw;
+padding-left: 2vw;
+margin-left: 2vw;
+}
+
 
 </style>
 
@@ -107,21 +163,21 @@ label{
     <a href="#">Our Partners</a>
     <a href="#">Become a Member</a>
     <a href="#">Careers</a>
+	
 	</div>
 	
-<div class="banner-image">
-<img src="landscape-aboutus.jpg" alt="landscape" style="width:100%">
+<div class="banner" style="width:100%">
 <div class="banner-text">
-<h1> About Us </h1>
-<h3> Our Story and What we Stand for </h3>
-</div>
-</div>
-	
-<section>
-<div class="divab txtpad w3-container">
 
-<h3> About Us </h3>
-<p><img src="aboutus1.jfif" alt="aboutus" style="float:left;width:300px;height:300px;" > The Shangri-La group is known for its numerous hotels, restaurants, and resorts but is also more than noteworthy in discussions of real-estate and sustainable growth Our headquarters is located in Hong Kong SAR and serve as pioneers for Asian Hospitality. There are more than 100 hotels worldwide under the Shangri-La group with over 30,000 rooms in total. Under the group are other hotel brands: Kerry Hotels, JEN, and Traders.
+<h1> About Us </h1>
+<h3> Learn More About Our Story and Ideals </h3>
+</div>
+</div>
+
+<div class="ab" style="width:100%">
+<section>
+
+<p><img src="aboutus1.jfif" alt="aboutus" style="float:left;width:24vw;height:24vw;margin:1vw" > The Shangri-La group is known for its numerous hotels, restaurants, and resorts but is also more than noteworthy in discussions of real-estate and sustainable growth Our headquarters is located in Hong Kong SAR and serve as pioneers for Asian Hospitality. There are more than 100 hotels worldwide under the Shangri-La group with over 30,000 rooms in total. Under the group are other hotel brands: Kerry Hotels, JEN, and Traders.
 
 <br>
 <br>
@@ -134,12 +190,11 @@ We at Shangri-La offer you only the best of the best. We are here to deliver the
 </div>
 
 </section>
+
 <section>
-<div class="txtpad w3-container w3-blue-gray divhis">
+<div class="txtpad his" style="width:100%">
 <h3> History </h3>
-<p><img src="kuok.jpg" alt="Kuok" style="float:right;width:300px;height:300px;"> In the year 1949, Robert Kuok founded the Kuok group in Hong Kong. However, it wasn’t until 1971 that the first Shangri-La hotel would open in Singapore under the management of Western International Hotels. By 1979, Shangri-La had started to manage itself with the founding of Shangri-La International Hotel Management Ltd. in 2010, and the handling of three properties under Kuok Hotels. After their massive success in Asia, they extended to Europe in 2010 with their hotel in Paris. To this day, the Shangri-La group still remains part of the Kuok group and expands its reaches across Asia and even in places beyond.
-
-
+<p><img src="kuok.jpg" alt="Kuok" style="float:right;width:24vw;height:24vw;margin:1vw"> In the year 1949, Robert Kuok founded the Kuok group in Hong Kong. However, it wasn’t until 1971 that the first Shangri-La hotel would open in Singapore under the management of Western International Hotels. By 1979, Shangri-La had started to manage itself with the founding of Shangri-La International Hotel Management Ltd. in 2010, and the handling of three properties under Kuok Hotels. After their massive success in Asia, they extended to Europe in 2010 with their hotel in Paris. To this day, the Shangri-La group still remains part of the Kuok group and expands its reaches across Asia and even in places beyond.
 
 
 </p>
@@ -149,29 +204,31 @@ We at Shangri-La offer you only the best of the best. We are here to deliver the
 
 <section>
 
-<div class="txtpad w3-container w3-light-gray w3-cell">
-<h3> Our Vision </h3>
-<p>To be the first choice for guests, colleagues, shareholders and business partners.</p>
+<div class="display">
+<div class="txtpad vis" style="height:100%">
+<h3 style="text-align:center"><b> Our Vision </b></h3>
+
+<p class="mid">To be the first choice for guests, colleagues, shareholders and business partners.</p>
 </div>
-<div class="txtpad w3-container w3-black w3-cell">
-<h3> Our Mission </h3>
-<p style="color:white">To delight our guests every time by creating engaging experiences straight from our hearst.</p>
+<div class="txtpad mis" style="height:100%">
+<h3 style="text-align:center"><b> Our Mission </b> </h3>
+<p style="color:white">To delight our guests every time by creating engaging experiences straight from our hearts.</p>
+</div>
 </div>
 </section>
 
 <section>
-<div class="w3-container background-color:ghostwhite">
-<form>
+<div class="feed">
 <h3> Give us Your Feedback </h3>
-	<label for="nameau" class="feedbackS">Name: </label> 
+	<label for="nameau" class="feedback" style="display: none">Name: </label> 
 		<input type="text" placeholder="Enter your Name" id="nameau" name="name" class="feedback" size="50" required="">
 		<br>
 		<br>
-	<label for="emailau" class="feedback">Email Address: </label> 
+	<label for="emailau" class="feedback" style="display: none">Email Address: </label> 
 		<input type="email" placeholder="Enter your email address" id="emailau" name="email" class="feedback" size="50" required="">
 		<br>
 		<br>
-	<label for="feedbackau" class="feedback">Feedback: </label>
+	<label for="feedbackau" class="feedback" style="display: none">Feedback: </label>
 	<textarea placeholder="Enter your message" id="feedbackau" name="feedback" rows="4" cols="100"></textarea><br>
 	<br>
 	<button class="submit"><span> Submit </span></button>
