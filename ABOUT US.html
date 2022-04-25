@@ -71,17 +71,17 @@ border: 2px solid ghostwhite;
   right: 0;
 }
 
-.divab {
+div.ab {
+background-color:#BDBED2;
 text-align: justify;
 text-justify: inter-word;
 padding-top: 2vw;
 padding-right: 2vw;
 padding-bottom: 2vw;
 padding-left: 2vw;
-margin-left: 2vw;
 }
 
-.divhis {
+div.his {
 background-color:#3E3F4F;
 text-align: justify;
 text-justify: inter-word;
@@ -96,9 +96,9 @@ color: white;
 display: flex;
 }
 
-.divvis{
+div.vis{
 background-color: gold;
-text-align: left;
+text-align: center;
 position: relative;
 height: 20vw;
 width: 20vw
@@ -110,9 +110,9 @@ color: black;
 
 }
 
-.divmis{
+div.mis{
 background-color: black;
-text-align: left;
+text-align: center;
 flex: 1;
 height: 20vw;
 width: 20vw
@@ -122,6 +122,8 @@ padding-bottom: 1vw;
 padding-left: 1vw;
 color:white;
 }
+
+
 
 p{
 font-size: 16px
@@ -136,6 +138,18 @@ padding-left: 20px;
 label {
 	display: none;
 }
+
+div.feed {
+background-color: light-gray;
+text-align: justify;
+text-justify: inter-word;
+padding-top: 2vw;
+padding-right: 2vw;
+padding-bottom: 2vw;
+padding-left: 2vw;
+margin-left: 2vw;
+}
+
 
 </style>
 
@@ -160,7 +174,7 @@ label {
 </div>
 </div>
 
-<div class="divab" style="width:100%">
+<div class="ab" style="width:100%">
 <section>
 
 <p><img src="aboutus1.jfif" alt="aboutus" style="float:left;width:24vw;height:24vw;margin:1vw" > The Shangri-La group is known for its numerous hotels, restaurants, and resorts but is also more than noteworthy in discussions of real-estate and sustainable growth Our headquarters is located in Hong Kong SAR and serve as pioneers for Asian Hospitality. There are more than 100 hotels worldwide under the Shangri-La group with over 30,000 rooms in total. Under the group are other hotel brands: Kerry Hotels, JEN, and Traders.
@@ -178,11 +192,9 @@ We at Shangri-La offer you only the best of the best. We are here to deliver the
 </section>
 
 <section>
-<div class="txtpad divhis" style="width:100%">
+<div class="txtpad his" style="width:100%">
 <h3> History </h3>
 <p><img src="kuok.jpg" alt="Kuok" style="float:right;width:24vw;height:24vw;margin:1vw"> In the year 1949, Robert Kuok founded the Kuok group in Hong Kong. However, it wasn’t until 1971 that the first Shangri-La hotel would open in Singapore under the management of Western International Hotels. By 1979, Shangri-La had started to manage itself with the founding of Shangri-La International Hotel Management Ltd. in 2010, and the handling of three properties under Kuok Hotels. After their massive success in Asia, they extended to Europe in 2010 with their hotel in Paris. To this day, the Shangri-La group still remains part of the Kuok group and expands its reaches across Asia and even in places beyond.
-
-
 
 
 </p>
@@ -193,20 +205,20 @@ We at Shangri-La offer you only the best of the best. We are here to deliver the
 <section>
 
 <div class="display">
-<div class="txtpad divvis" style="height:100%">
-<h3> Our Vision </h3>
-<p>To be the first choice for guests, colleagues, shareholders and business partners.</p>
+<div class="txtpad vis" style="height:100%">
+<h3 style="text-align:center"><b> Our Vision </b></h3>
+
+<p class="mid">To be the first choice for guests, colleagues, shareholders and business partners.</p>
 </div>
-<div class="txtpad divmis" style="height:100%">
-<h3> Our Mission </h3>
+<div class="txtpad mis" style="height:100%">
+<h3 style="text-align:center"><b> Our Mission </b> </h3>
 <p style="color:white">To delight our guests every time by creating engaging experiences straight from our hearts.</p>
 </div>
 </div>
 </section>
 
 <section>
-<div class="w3-container background-color:ghostwhite">
-<form>
+<div class="feed">
 <h3> Give us Your Feedback </h3>
 	<label for="nameau" class="feedback" style="display: none">Name: </label> 
 		<input type="text" placeholder="Enter your Name" id="nameau" name="name" class="feedback" size="50" required="">
