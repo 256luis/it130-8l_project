@@ -1,0 +1,37 @@
+<div class="footer">
+	<h4 style="color: ghostwhite; font-size: 22px; padding-left: 12.5vw">Shangri-La Site Map</h4>
+	<center>
+		<table width="70%" style="margin-bottom: 0px;">
+		  <tbody>
+			<tr valign="top">
+			  <td width="25%;" height="auto" class="sitemaptbl">
+				
+				  <a class="footerlinks" href="MAIN.html">Home</a> <br />
+				  <a class="footerlinksB" href="MAIN.html#">What Is Home</a> <br /> <!-- Needs Section in Link -->
+				  <a class="footerlinks" href="ABOUTUS.html">About Us</a> <br />
+				  <a class="footerlinks" href="TAKEATOUR.html">Take a Tour</a>
+					
+			  </td>
+			  <td width="25%;" height="auto" class="sitemaptbl">
+				  <a class="footerlinks" href="EVENTS.html">Services Offered </a><br />
+				  <a class="footerlinksB" href="EVENTS.html#rooms"> Rooms</a> <br />
+				  <a class="footerlinksB" href="EVENTS.html#eventsspaces"> Events Spaces</a> <br />
+				  <a class="footerlinks" href="RESERVATIONS.html"> Reservations</a>
+			  </td>
+			  <td width="25%;" height="auto" class="sitemaptbl">
+				  <a class="footerlinks" href="BECOMEAMEMBER.html"> Become a Member</a><br />
+				  <a class="footerlinks" href="CAREERS.html"> Career</a><br /> 
+				  <a class="footerlinksB" href="CAREERS.html#"> Available Positions</a><br /> <!-- Needs Section in Link -->
+				  <a class="footerlinksB" href="CAREERS.html#"> Submit Resume</a> <!-- Needs Section in Link -->
+			  </td>
+			  <td width="25%;" height="auto" class="sitemaptbl">
+				  <a class="footerlinks" href="OURPARTNERS.html"> Our Partners</a><br />
+				  <a class="footerlinksB" href="OURPARTNERS.html#list"> List of Partners</a><br /> 
+				  <a class="footerlinksB" href="OURPARTNERS.html#corpprof"> Corporate Profile</a><br />
+				  <a class="footerlinksB" href="OURPARTNERS.html#query"> Partnership/Investment</a>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+	</center>
+</div>
