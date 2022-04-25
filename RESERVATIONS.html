@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservations</title>
+	<link rel="stylesheet" type="text/css" href="hotelstyle.css">
+
+</head>
+<style>
+
+.submit:hover {
+background-color: black;
+color: ghostwhite;
+border: 2px solid ghostwhite;
+}
+
+.submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submit:hover span {
+  padding-right: 25px;
+}
+
+.submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+legend{
+font-family: "Garamond", serif;
+font-size:36px;
+font-weight:bold;
+color: #F5C70D;
+margin-top: 2vw;
+}
+
+label, select, input{
+font-family: "Verdana", sans-serif;
+padding-right: 1vw;
+}
+
+
+fieldset{
+margin-top: 2vw;
+}
+
+select{
+width:10vw;
+
+}
+
+td{
+padding-top: 1vw;
+
+padding-bottom: 1vw;
+
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("reserve.jpg");
+  height: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.pinfo{
+position: relative
+height: 20vw;
+width: 20vw
+}
+
+.display{
+display: flex
+}
+
+.hotel{
+background-color: #000000;
+position: relative;
+height: 20vw;
+width: 20vw
+padding-top: 1vw;
+padding-right: 1vw;
+padding-bottom: 1vw;
+padding-left: 1vw;
+color: white;
+
+}
+
+.resto{
+background-color: #38455C;
+flex: 1;
+height: 20vw;
+width: 20vw
+padding-top: 1vw;
+padding-right: 1vw;
+padding-bottom: 1vw;
+padding-left: 1vw;
+
+}
+
+.pay{
+position: relative;
+height: 20vw;
+width: 20vw
+}
+</style>
+
+<body>
+    <div class="nav1">
+    <a href="#Home"class="active">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Take a Tour</a>
+    <a href="#">Services Offered</a>
+    <a href="#">Reservation</a>
+    <a href="#">Our Partners</a>
+    <a href="#">Become a Member</a>
+    <a href="#">Careers</a>
+</div>
+
+
+<div class="banner" style="width:100%">
+</div>
+
+<div class="pinfo" style="width:100%" >
+<fieldset class="fieldset">
+<legend>Personal Information</legend>
+
+<table>
+		<tr>
+		<td><label for="fname">First name: </label>
+		<input type="text" id="fname" name="fname" required></td>
+		
+		<td><label for="lname">Last name: </label>
+		<input type="text" id="lname" name="lname"required></td>
+		
+		<td><label for="mname">Middle name:</label>
+		<input type="text" id="mname" name="mname"></td></tr>
+		
+		<tr>
+		<td><label for="email">E-mail:</label>
+		<input type="email" id="email" name="email"required></td></tr>
+		
+		<tr>
+		<td><label for="pnum">Mobile Number:</label>
+		<input type="tel" id="pnum" name="pnum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"></td>
+
+		<td><label for="tnum">Tel. Number:</label>
+		<input type="tel" id="tnum" name="tnum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td></tr>
+	</table>
+		
+	</fieldset>
+	</div>
+	
+	<hr>
+	
+	<div class="display">
+	<div class="hotel" style="height:100%"><fieldset class="fieldset"><table>
+	<legend>Hotel Booking</legend>
+	
+	<tr>
+		<td><label for="cin">Check in:</label>
+		<input type="date" id="cin" name="cin"></td>
+		<td><label for="cout">Check out:</label>
+		<input type="date" id="cout" name="cout">
+		</td></tr>
+		
+	<tr><td><label for="room">Branch:</label>
+	<select name="branch" id="branch">
+		<option value="choose2">...</option>
+		<option value="Edsa">EDSA</option>
+		<option value="Makati">Makati</option>
+		<option value="TheFort">The Fort</option>
+
+	<td>
+	
+	<tr>
+		<td><label for="rooms">Number of Rooms: </label>
+		<input type="number" id="rooms" name="rooms"></td>
+	<td><label for="room">Room Type:</label>
+		<select name="room" id="room">
+		<option value="choose1">...</option>
+		<option value="TWDR">Tower Ring Deluxe Room</option>
+		<option value="TWDR">Tower Ring Premiere Room</option>
+		<option value="GWDR">Garden Wing Deluxe Room</option>
+		<option value="TWRHER">Tower Wing Executive Room</option>
+		<option value="GWHCR">Garden Wing Horizon Club Room</option>
+		<option value="TWDS">Tower Wing Deluxe Suite</option>
+		<option value="GWPS">Garden Wing Premiere Suite</option>
+		<option value="GWSLS">Garden Wing Shangri-La Suite</option>
+	</select></td></tr>
+	
+	
+		<tr>
+		<td><label for="adult">Number of Adults: </label>
+		<input type="number" id="adult" name="adult"></td>
+		
+		<td><label for="child">Number of Children: </label>
+		<input type="number" id="child" name="child"></td></tr>
+		
+		<tr>
+		<td><label for="code">Special Code </label>
+		<input type="number" id="code" name="code"></td>
+		</tr>
+	
+	<tr>
+	<td><label for="request2"> Specifications:</label>
+	<textarea id="request2" name="request2" rows="2" cols="50"></textarea></td></tr>
+		
+	</table></fieldset></div>
+	
+	<div class="resto" style="height:100%"><fieldset class="fieldset"><table>
+	
+	<legend>Restaurant Reservation</legend>
+	
+	<tr>
+		<td><label for="date">Date</label>
+		<input type="date" id="date" name="date"></td>
+		
+		<td><label for="slot">Time Slot</label>
+		<select name="slot" id="slot">
+		<option value="choose3">...</option>
+		<option value="1130">11:30am - Lunch</option>
+		<option value="1145">11:45am - Lunch</option>
+		<option value="1200">12:00pm - Lunch </option>
+		<option value="1215">12:15pm - Lunch </option>
+		<option value="1230">12:30pm - Lunch </option>
+		<option value="1245">12:45pm - Lunch </option>
+		<option value="100">1:00pm - Lunch </option>
+		<option value="115">1:15pm - Lunch </option>
+		<option value="130">1:30pm - Lunch </option>
+		<option value="145">1:45pm - Lunch </option>
+		<option value="200">2:00pm - Lunch </option>
+		<option value="215">2:15pm - Lunch </option>
+		<option value="600">6:00pm - Dinner </option>
+		<option value="615">6:15pm - Dinner </option>
+		<option value="630">6:30pm - Dinner </option>
+		<option value="645">6:45pm - Dinner </option>
+		<option value="700">7:00pm - Dinner </option>
+		<option value="715">7:15pm - Dinner </option>
+		<option value="730">7:30pm - Dinner </option>
+		</td></tr>
+		
+	<tr><td><label for="room">Restaurant</label>
+	<select name="restaurant" id="restaurant">
+		<option value="choose4">...</option>
+		<option value="cr">Canton Road</option>
+		<option value="senju">Senju</option>
+		<option value="samba">Samba</option>
+		<option value="summerplace">Summer Place</option>
+		<option value="hscafe">High Street Cafe</option>
+		<option value="ragingbull">Raging Bull Chophouse &amp; Bar</option>
+		<option value="heat">HEAT</option>
+
+	<td>
+	
+	<tr>
+		<td><label for="rooms">Number of Tables: </label>
+		<input type="number" id="tables" name="tables"></td>
+		
+		<td><label for="guests">Number of Guests: </label>
+		<input type="number" id="guests" name="guests"></td>
+		</td></tr>
+		
+	<tr>
+	<td><label for="request1"> Specifications:</label>
+	<textarea id="request1" name="request1" rows="8" cols="50"></textarea></td></tr>
+		
+</table></fieldset></div>
+</div>
+		
+	<br>
+	<hr>
+	<br>
+	<div class="pay">
+	<fieldset class="fieldset">
+	<legend>Payment Details</legend>
+	
+	<table>
+		<tr>
+		<td><label for="pmethod">Payment Method</label>
+		<select name="pmethod" id="pmethod">
+		<option value="credit">Credit Card</option>
+		<option value="debit">Debit Card</option>
+		<option value="gcash">GCash</option>
+		<option value="cash">Over the Counter</option>
+		</select></td></tr>
+
+		
+		<tr>
+		<td><label for="fname2">First name: </label>
+		<input type="text" id="fname2" name="fname2"></td>
+		
+		<td><label for="lname2">Last name: </label>
+		<input type="text" id="lname2" name="lname2"></td></tr>
+		
+		
+		<tr>
+		<td><label for="ctype">If card, card type</label>
+		<select name="ctype" id="ctype">
+		<option value="visa">Visa</option>
+		<option value="mc">Mastercard</option>
+		<option value="jcb">JCB</option>
+		<option value="dci">Diner's Club International</option>
+		</select></td>
+		
+		
+		<td><label for="cnumb">Card Number:</label>
+		<input type="number" id="cnumb" name="cnumb"></td></tr>
+	<tr><td><button class="submit"><span> Submit </span></button></td></tr>
+	</table></fieldset>
+	</div>
+	
+	<br>
+	<br>
+	
+	</body>
+	</html>
