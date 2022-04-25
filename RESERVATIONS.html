@@ -6,7 +6,6 @@
 	<title>Reservations</title>
 	<link rel="stylesheet" type="text/css" href="hotelstyle.css">
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="icon" type="image" href="img/shangri-la.png" >
 
 </head>
 <style>
@@ -56,6 +55,10 @@ font-family: "Verdana", sans-serif;
 padding-right: 1vw;
 }
 
+label.white{
+color: white;
+}
+
 
 fieldset{
 margin-top: 2vw;
@@ -66,10 +69,9 @@ width:10vw;
 
 }
 
-td{
-padding-top: 1vw;
-padding-bottom: 1vw;
-
+.center{
+display: flex;
+justify-content: center;
 }
 
 .banner {
@@ -80,7 +82,7 @@ padding-bottom: 1vw;
   background-size: cover;
   position: relative;
 }
-	
+
 .banner-text {
   text-align: center;
   position: absolute;
@@ -90,62 +92,25 @@ padding-bottom: 1vw;
   color: white;
  }
  
- .banner-head{
-font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-font-size: 72px;
+  .banner-head{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 72px;
+	padding-left: 4.5vw;
  }
 
-
-
-.pinfo{
-position: relative
-height: 20vw;
-width: 20vw
-}
-
-.display{
-display: flex
-}
-
-.hotel{
-background-color: #000000;
-position: relative;
-height: 20vw;
-width: 20vw
-padding-top: 1vw;
-padding-right: 1vw;
-padding-bottom: 1vw;
-padding-left: 1vw;
-color: white;
-
-}
-
-.resto{
-background-color: #38455C;
-flex: 1;
-height: 20vw;
-width: 20vw
-padding-top: 1vw;
-padding-right: 1vw;
-padding-bottom: 1vw;
-padding-left: 1vw;
-
-}
-
-.pay{
-position: relative;
-height: 20vw;
-width: 20vw
+div.reserve{
+padding-top: 2vw;
+padding-bottom: 2vw;
 }
 </style>
 
 <body>
     <div class="nav1">
     <a href="MAIN.html">Home</a>
-    <a href="ABOUTUS.html" class="active">About Us</a>
+    <a href="ABOUTUS.html">About Us</a>
     <a href="TAKEATOUR.html">Take a Tour</a>
     <a href="EVENTS.html">Services Offered</a>
-    <a href="RESERVATIONS.html">Reservation</a>
+    <a href="RESERVATIONS.html  class="active">Reservation</a>
     <a href="BECOMEAMEMBER.html">Become a Member</a>
     <a href="CAREERS.html">Careers</a>
     <a href="OURPARTNERS.html">Our Partners</a>
@@ -153,15 +118,15 @@ width: 20vw
 </div>
 
 
-<div class="banner" style="width:100%">
-<div class="banner-text banner-head">
+<div class="banner center" style="width:100%">
+<div>
 
-<h1> Book Today! </h1>
+<h1 class="banner-text banner-head"> Book Today! </h1>
 
 </div>
 </div>
 
-<div class="pinfo" style="width:100%" >
+<div class="w3-container w3-dark-gray white center reserve">
 <fieldset class="fieldset">
 <legend>Personal Information</legend>
 
@@ -191,10 +156,9 @@ width: 20vw
 	</fieldset>
 	</div>
 	
-	<hr>
-	
-	<div class="display">
-	<div class="hotel" style="height:100%"><fieldset class="fieldset"><table>
+<div class="w3-cell-row center">
+<div class="txtpad w3-container w3-blue-gray w3-cell white reserve">
+<table>
 	<legend>Hotel Booking</legend>
 	
 	<tr>
@@ -244,11 +208,11 @@ width: 20vw
 	
 	<tr>
 	<td><label for="request2"> Specifications:</label>
-	<textarea id="request2" name="request2" rows="2" cols="50"></textarea></td></tr>
+	<textarea id="request2" name="request2" rows="4" cols="50"></textarea></td></tr>
 		
 	</table></fieldset></div>
 	
-	<div class="resto" style="height:100%"><fieldset class="fieldset"><table>
+	<div class="txtpad w3-container w3-gray w3-cell reserve"><table>
 	
 	<legend>Restaurant Reservation</legend>
 	
@@ -303,15 +267,12 @@ width: 20vw
 		
 	<tr>
 	<td><label for="request1"> Specifications:</label>
-	<textarea id="request1" name="request1" rows="8" cols="50"></textarea></td></tr>
+	<textarea id="request1" name="request1" rows="4" cols="50"></textarea></td></tr>
 		
 </table></fieldset></div>
 </div>
 		
-	<br>
-	<hr>
-	<br>
-	<div class="pay">
+	<div class="w3-container w3-black white center reserve">
 	<fieldset class="fieldset">
 	<legend>Payment Details</legend>
 	
