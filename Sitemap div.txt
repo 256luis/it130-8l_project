@@ -1,3 +1,5 @@
+<!-- Yow, if ever mawala yung sitemap nyo copy paste nyo n lng from dito, wit links na ata to -->
+
 <div class="footer">
 	<h4 style="color: ghostwhite; font-size: 22px; padding-left: 12.5vw">Shangri-La Site Map</h4>
 	<center>
