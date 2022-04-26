@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Take a tour</title>
+	<link rel="stylesheet" type="text/css" href="hotelstyle.css">
+    <link rel="icon" type="image" href="img/shangri-la.png" >
+</head>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+p{
+text-indent: 2vw;
+text-align: justify;
+text-justify: inter-word;
+font-family: verdana;
+font-size: 1vw;
+margin-bottom: 1.5vw;
+}
+.bg1{
+background-color: black;
+/*background-image: linear-gradient(to right, black,  rgba(0,0,0,0.5));*/
+height: 96vh;
+width: 100%;
+padding-bottom:0.5vw;
+overflow: hidden;
+}
+
+.shang{
+font-family: elephant,sans-serif;
+font-size: 9vw;
+background: linear-gradient(to right, #FFA400, #F9EA9A);
+-webkit-background-clip: text; 
+-webkit-text-fill-color:transparent;
+
+}
+h1{
+font-family:bodoni mt black;
+font-size: 6vw;
+font-style: italic;
+font-weight: normal;
+text-align: center;
+margin-top: -2vw;
+width: 85vw;
+height: 15vw;
+line-height: 3.8vw;
+}
+
+.tab{
+display:none;
+
+}
+.button1, .button2, .button3, .button4{
+
+height: 30vw;
+width: 20vw;
+margin-left: 1vw;
+float: left;
+overflow: hidden;
+position: relative;
+z-index: 1;
+font-family: calibri,sans-serif;
+font-size: 2vw;
+color: white;
+
+}
+.button1{
+background-color: rgba(255, 186, 8, 0.5);
+
+
+}
+.button1:hover{
+background-color: rgba(255, 186, 8, 0.8);
+
+
+}
+.button2{
+background-color: rgba(63, 136, 197, 0.5);
+
+}
+.button2:hover{
+background-color: rgba(63, 136, 197, 0.8);
+
+}
+.button3{
+background-color: rgba(162, 73, 54, 0.5);
+
+}
+.button3:hover{
+background-color: rgba(162, 73, 54, 0.8);
+
+}
+.button4{
+background-color: rgba(104, 182, 132, 0.5);
+
+}
+.button4:hover{
+background-color: rgba(104, 182, 132, 0.8);
+
+}
+.txtpad1{
+background-color: ghostwhite;
+overflow: hidden;
+clear: both;
+margin-top: -18vw;
+margin-left: 6vw;
+margin-right: 2vw;
+width: 75vw;
+padding: 5vw;
+border-radius: 2vw;
+overflow: hidden;
+}
+.pic{
+width:20vw;
+height: 20vw;
+object-fit: cover;
+float: left;
+margin-left: 1vw;
+margin-bottom: 1vw;
+}
+.pic:hover{
+transform: scale(1.5);
+
+}
+.pic1{
+margin-left:5vw;
+}
+</style>
+<body>
+    <div class="nav1">
+    <a href="MAIN.html">Home</a>
+    <a href="ABOUTUS.html" >About Us</a>
+    <a href="TAKE A TOUR" class="active">Take a Tour</a>
+    <a href="EVENTS.html">Services Offered</a>
+    <a href="RESERVATIONS.html">Reservation</a>
+    <a href="BECOMEAMEMBER.html">Become a Member</a>
+    <a href="CAREERS.html">Careers</a>
+    <a href="OURPARTNERS.html">Our Partners</a>
+
+
+
+
+
+
+	</div>
+
+
+    <div class="bg1"><h1><span style="margin-right:6vw;">explore</span><br><span class="shang" >Shangri-La</span></h1></div>
+    <div class="tab" style="margin-bottom: 15vw;">
+      <div style="margin: -18vw 5vw 0vw 7vw;">
+      <div style=" float:left;"> <img src="img/LIVING ROOM.jpg" style="height: 30vw; width: 20vw; object-fit: cover; z-index: -1; margin-left:-20vw;" ><div class="button1" onclick="nextPrev(1)"><div style="margin: 13vw 0vw 0vw 5vw;">Living Room</div></div></div>
+
+     <div style=" float:left;"> <img src="img/MASTER BEDROOM.jpg" style="height: 30vw; width: 20vw; object-fit: cover; z-index: -1; margin-left:-20vw;" ><div class="button2" onclick="nextPrev(2)"><div style="margin: 13vw 0vw 0vw 3vw;">Master Bedroom</div></div></div>
+      
+     <div style=" float:left;"> <img src="img/KITCHEN.jpg" style="height: 30vw; width: 20vw; object-fit: cover; z-index: -1; margin-left:-20vw;" ><div class="button3" onclick="nextPrev(3)"><div style="margin: 13vw 0vw 0vw 5vw;">Kitchen and Dining Room</div></div></div>
+      
+     <div style=" float:left;"> <img src="img/BALCONY.jpg" style="height: 30vw; width: 20vw; object-fit: cover; z-index: -1; margin-left:-20vw;" ><div class="button4" onclick="nextPrev(4)"><div style="margin: 13vw 0vw 0vw 3vw;">Balcony and View</div></div></div>
+      
+<!-- in case
+
+      <div class="button4" onclick="nextPrev(4)"><img src="img/BALCONY.jpg" style="height: 30vw; width: 20vw; object-fit: cover;"></div> 
+      </div>-->
+    </div>
+    </div>
+    <div class="tab"> <!--living-->
+        <div class="txtpad1">
+      <div style="float:left;margin-right: 1vw;">
+     <div id="prevBtn" onclick="nextPrev(-100)"><img src="img/back.png" style="width:4vw; height: 4vw;" title="back"></div>
+     </div>
+            <h3 >Living Room</h3><br><br>
+            <p style="clear:left; width:70vw; font-size: 1vw;">This is where the family is at. To have fun and live life to the fullest. its the memories in the living room. Find your perfect living room  
+</p>
+    <div class="pic1">
+    <img src="img/PIC_LIVING ROOM/01.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/02.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/03.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/04.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/05.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/06.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/07.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/08.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/09.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/10.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/11.jpg" class="pic">
+    <img src="img/PIC_LIVING ROOM/12.jpg" class="pic">
+    </div>
+    <br>
+
+        </div>
+    </div>
+
+
+    <div class="tab"><!--Master-->
+        <div class="txtpad1">
+      <div style="float:left;margin-right: 1vw;">
+     <div id="prevBtn" onclick="nextPrev(-100)"><img src="img/back.png" style="width:4vw; height: 4vw;" title="back"></div>
+     </div>
+            <h3 >Master Bedroom</h3>
+            <br>
+            <p style="clear:both; width:70vw; font-size: 1vw;">Live in a world filled with comfort, a place to find refuge for your journeys.  That is what the master bedroom is all about. its about the comfort, the relaxation of the person to the fullest. Find your perfect master bedroom  
+</p>
+    <div class="pic1">
+    <img src="img/PIC_MASTER BEDROOM/01.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/02.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/03.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/04.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/05.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/06.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/07.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/08.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/09.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/10.jpg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/11.jpeg" class="pic">
+    <img src="img/PIC_MASTER BEDROOM/12.jpeg" class="pic">
+    </div>
+    <br>
+
+
+    </div>
+    </div>
+
+
+    <div class="tab"><!--Kitchen-->
+        <div class="txtpad1">
+      <div style="float:left;margin-right: 1vw;">
+     <div id="prevBtn" onclick="nextPrev(-100)"><img src="img/back.png" style="width:4vw; height: 4vw;" title="back"></div>
+     </div>
+            <h3 >Kitchen and Dining</h3>
+            <p style="clear:left; width:70vw;">Aroma, the gentle and savory and sweet tasting food originates. The family gathers here for a meal to satisfy their hunger. It is where one of the most crucial gatherings occur. One we can also call the family time and critical family bonding. 
+</p>
+    <div class="pic1">
+    <img src="img/PIC_KITCHEN/01.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/02.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/03.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/04.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/05.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/06.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/07.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/08.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/09.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/10.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/11.jpg" class="pic">
+    <img src="img/PIC_KITCHEN/12.jpg" class="pic">
+    </div>
+    <br>
+    </div>
+    </div>
+
+
+
+    <div class="tab"><!--Balcony-->
+        <div class="txtpad1">
+      <div style="float:left;margin-right: 1vw;">
+     <div id="prevBtn" onclick="nextPrev(-100)"><img src="img/back.png" style="width:4vw; height: 4vw;" title="back"></div>
+     </div>
+            <h3 >Balcony and View</h3>
+            <p style="clear:left; width:70vw;">Be the king of the world, see the gorgeous views that spans the earth. Feel free and happy to see nature alongside you. 
+</p>
+    <div class="pic1">
+    <img src="img/PIC_BALCONY/01.jpeg" class="pic">
+    <img src="img/PIC_BALCONY/02.jpg" class="pic">
+    <img src="img/PIC_BALCONY/03.jpg" class="pic">
+    <img src="img/PIC_BALCONY/04.jpg" class="pic">
+    <img src="img/PIC_BALCONY/05.jpg" class="pic">
+    <img src="img/PIC_BALCONY/06.jpg" class="pic">
+    <img src="img/PIC_BALCONY/07.jpg" class="pic">
+    <img src="img/PIC_BALCONY/08.jpg" class="pic">
+    <img src="img/PIC_BALCONY/09.jpg" class="pic">
+    <img src="img/PIC_BALCONY/10.jpg" class="pic">
+    <img src="img/PIC_BALCONY/11.jpg" class="pic">
+    <img src="img/PIC_BALCONY/12.jpg" class="pic">
+    </div>
+    <br>
+    </div>
+    </div>
+  
+     
+
+<script>
+
+
+var currentTab = 0; // Current tab is set to be the first tab (0)
+
+
+showTab(currentTab); // Display the current tab
+
+
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+
+}
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  // Hide the current tab:
+ 
+  x[currentTab].style.display = "none";
+
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+if(currentTab<0){
+currentTab=0;
+}
+  // Otherwise, display the correct tab:
+
+  showTab(currentTab);
+
+}
+
+
+
+
+</script>
+</body>
+<div class="footer" style="padding-top: 17vw; ">
+    <h4 style="color: ghostwhite; font-size: 22px; padding-left: 12.5vw">Shangri-La Site Map</h4>
+    <center>
+        <table width="70%" style="margin-bottom: 0px;">
+          <tbody>
+            <tr valign="top">
+              <td width="25%;" height="auto" class="sitemaptbl">
+                
+                  <a class="footerlinks" href="MAIN.html">Home</a> <br />
+                  <a class="footerlinksB" href="MAIN.html#">What Is Home</a> <br /> <!-- Needs Section in Link -->
+                  <a class="footerlinks" href="ABOUTUS.html">About Us</a> <br />
+                  <a class="footerlinks" href="TAKEATOUR.html">Take a Tour</a>
+                    
+              </td>
+              <td width="25%;" height="auto" class="sitemaptbl">
+                  <a class="footerlinks" href="EVENTS.html">Services Offered </a><br />
+                  <a class="footerlinksB" href="EVENTS.html#rooms"> Rooms</a> <br />
+                  <a class="footerlinksB" href="EVENTS.html#eventsspaces"> Events Spaces</a> <br />
+                  <a class="footerlinks" href="RESERVATIONS.html"> Reservations</a>
+              </td>
+              <td width="25%;" height="auto" class="sitemaptbl">
+                  <a class="footerlinks" href="BECOMEAMEMBER.html"> Become a Member</a><br />
+                  <a class="footerlinks" href="CAREERS.html"> Career</a><br /> 
+                  <a class="footerlinksB" href="CAREERS.html#"> Available Positions</a><br /> <!-- Needs Section in Link -->
+                  <a class="footerlinksB" href="CAREERS.html#"> Submit Resume</a> <!-- Needs Section in Link -->
+              </td>
+              <td width="25%;" height="auto" class="sitemaptbl">
+                  <a class="footerlinks" href="OURPARTNERS.html"> Our Partners</a><br />
+                  <a class="footerlinksB" href="OURPARTNERS.html#list"> List of Partners</a><br /> 
+                  <a class="footerlinksB" href="OURPARTNERS.html#corpprof"> Corporate Profile</a><br />
+                  <a class="footerlinksB" href="OURPARTNERS.html#query"> Partnership/Investment</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </center>
+</div>
+</html>

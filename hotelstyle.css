@@ -1,11 +1,12 @@
 .txtpad{
 background-color: ghostwhite;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 padding: 10vw;
 padding-top: 7vw;
 overflow: hidden;
 clear: both;
 }
+
 h1{
 margin-left: 6vw;
 padding-top: 13vw;
